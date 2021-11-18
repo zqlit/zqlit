@@ -10,7 +10,7 @@
   <img align="center" alt="My QQ Group, for Chinese visitors" width="22px" src="https://camo.githubusercontent.com/082d9d627e4fb75325430d28b9662185e1321483744f42995e142fb089901db9/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f6564656e742f537570657254696e7949636f6e732f696d616765732f7376672f71712e737667" data-canonical-src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/qq.svg" style="max-width: 100%;">
 </a>&nbsp;
 <a href="https://usj.cc" align="center" rel="nofollow">
-  <img align="center" alt="Eltrac on Twitter" width="22px" src="https://usj.cc/favicon.ico" data-canonical-src="https://usj.cc/favicon.ico" style="max-width: 100%;">
+  <img align="center" alt="Eltrac on Twitter" width="22px" src="https://img.52ql.cn/img/187" data-canonical-src="https://img.52ql.cn/img/187" style="max-width: 100%;">
 </a>
 <br><br>
 </article>
