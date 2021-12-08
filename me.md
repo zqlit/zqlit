@@ -1,32 +1,17 @@
-<article class="markdown-body entry-content container-lg f5" itemprop="text"><div class="readme-box css-1ab3vsb">
-
-        <div id="md-editor-rt" class="md md-previewOnly">
-
-            <div class="md-content">
-
-                <div id="md-preview" class="md-preview vuepress-theme">
-
-                    <p><a
-
-​              href="http://pan.92i.top/view.php/0e2f2d665a6a2ec6858a605645545fb8.mp4">随着时代的飞速发展，许多老年人变得越来越浮躁，我想为大家做一些微不足道的贡献，如果您有浮躁的现象，请点开我</a>
-
-​          </p>
-
-​          <h4 id="请我喝杯奶茶"><a href="#请我喝杯奶茶">请我喝杯奶茶</a></h4>
-
-​          <blockquote>
+<article class="markdown-body entry-content container-lg f5" itemprop="text">
+        <a  href="http://pan.92i.top/view.php/0e2f2d665a6a2ec6858a605645545fb8.mp4">随着时代的飞速发展，许多老年人变得越来越浮躁，我想为大家做一些微不足道的贡献，如果您有浮躁的现象，请点开我</a>
+<h4 id="请我喝杯奶茶"><a href="#请我喝杯奶茶">请我喝杯奶茶</a></h4>
+<blockquote>
 
                         <p>赞助 <strong><a href="http://zanzhu.211fk.com/">Suhui</a></strong>.</p>
 
-​          </blockquote>
+</blockquote>
 
-​          <blockquote>
+<blockquote>
 
-                        <p>Traveling light <em><a
-
-​                  href="http://pan.211fk.com/%E8%A7%86%E9%A2%91/Traveling%20light.mp4">this</a></em>.
-
-​            </p>
+<p>Traveling light <em>
+        <a  href="http://pan.211fk.com/%E8%A7%86%E9%A2%91/Traveling%20light.mp4">this</a></em>.
+    </p>
 
 ​          </blockquote>
 
