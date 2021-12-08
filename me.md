@@ -1,4 +1,4 @@
-<div class="readme-box css-1ab3vsb">
+<article class="markdown-body entry-content container-lg f5" itemprop="text"><div class="readme-box css-1ab3vsb">
 
         <div id="md-editor-rt" class="md md-previewOnly">
 
@@ -102,22 +102,4 @@
 
   </div>
 
-
-
-    <script>
-
-​    let interval = setInterval(() => {
-
-​      var t = document.querySelector("#root > div > div > div.chakra-stack.css-wlpsqb > div.footer.css-3m0ceo > div > div");
-
-
-
-​      t.style.display = 'none';
-
-
-
-​    },
-
-​      200)
-
-  </script>
+</article>
