@@ -1,0 +1,32 @@
+2022-05-21 22:50:09,079 [1] INFO  Log1 - v2rayN start up | v2rayN - V5.23 - 2022/05/06 | C:\Users\17701\Desktop\v2rayN\v2rayN.exe
+2022-05-21 22:50:09,282 [1] DEBUG Log2 - 未能找到文件“C:\Users\17701\Desktop\v2rayN\guiNConfig.json”。
+2022-05-21 22:50:09,282 [1] DEBUG Log2 - System.IO.FileNotFoundException: 未能找到文件“C:\Users\17701\Desktop\v2rayN\guiNConfig.json”。
+文件名:“C:\Users\17701\Desktop\v2rayN\guiNConfig.json”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path)
+   在 v2rayN.Utils.LoadResource(String res)
+2022-05-21 22:51:09,513 [4] INFO  Log1 - UpdateTaskRun
+2022-05-21 22:52:19,894 [1] DEBUG Log2 - Error reading JObject from JsonReader. Path '', line 0, position 0.
+2022-05-21 22:52:19,895 [1] DEBUG Log2 - Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Path '', line 0, position 0.
+   在 Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   在 Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   在 v2rayN.Utils.ParseJson(String strJson)
+2022-05-21 22:52:58,054 [1] INFO  Log1 - MyAppExit Begin
+2022-05-21 22:52:58,257 [1] INFO  Log1 - MyAppExit End
+2022-05-21 22:58:13,871 [1] INFO  Log1 - v2rayN start up | v2rayN - V5.23 - 2022/05/06 | C:\Users\17701\Desktop\v2rayN\v2rayN.exe
+2022-05-21 22:58:14,475 [3] DEBUG Log2 - 2022/05/21 22:58:14 Using default config:  C:\Users\17701\Desktop\v2rayN\config.json
+
+2022-05-21 22:58:14,475 [3] DEBUG Log2 - System.Exception: 2022/05/21 22:58:14 Using default config:  C:\Users\17701\Desktop\v2rayN\config.json
+
+   在 v2rayN.Handler.V2rayHandler.V2rayStart()
+2022-05-21 22:58:29,001 [1] INFO  Log1 - MyAppExit Begin
+2022-05-21 22:58:29,100 [1] DEBUG Log2 - 进程已退出，因此无法获得所请求的信息。
+2022-05-21 22:58:29,100 [1] DEBUG Log2 - System.InvalidOperationException: 进程已退出，因此无法获得所请求的信息。
+   在 System.Diagnostics.Process.EnsureState(State state)
+   在 System.Diagnostics.Process.get_MainWindowHandle()
+   在 System.Diagnostics.Process.CloseMainWindow()
+   在 v2rayN.Handler.V2rayHandler.KillProcess(Process p)
+2022-05-21 22:58:29,100 [1] INFO  Log1 - MyAppExit End
