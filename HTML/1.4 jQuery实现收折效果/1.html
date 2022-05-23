@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #feedme {
+            display: inline-block;
+            margin: 10px auto;
+            border: 1px solid rgb(69, 204, 170);
+            color: rgb(69, 204, 170);
+            font-size: 14px;
+            font-weight: 400;
+            padding: 0.35rem 0.85rem;
+            border-radius: 1000rem;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+            cursor: pointer;
+        }
+
+        #feedme:hover {
+            background: rgb(69, 204, 170);
+            color: white;
+        }
+
+        #feedme-content {
+            background: rgb(238, 238, 238);
+            width: 100%;
+            text-align: center;
+            height: 200px;
+            display: none;
+        }
+
+        #feedme-content img {
+            height: 180px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p align="center"><a id="feedme" onclick="feedme_show()">赞赏小赵</a></p>
+    <div id="feedme-content" style="display: none;">
+        <img src="https://api.usj.cc/ota/2022/03/22/zPohIiIW.jpg">
+    </div>
+</body>
+<!-- <script>console.info(" %c 叶开楗博客 %c https://xn--qpru0x.cn/", 'color: #fadfa3; background: #030307; padding:5px 0;', 'color: #fadfa3; background: #fadfa3; padding:5px 0;');</script> -->
+<script>
+    function feedme_show() {
+        if ($("#feedme-content").css("display") == 'none') {
+            $("#feedme-content").slideDown();
+        } else {
+            $("#feedme-content").slideUp();
+        }
+    }
+</script>
+<script src="https://i.xiamuyourenzhang.cn/qqmd/js/jquery.min.js"></script>
+
+</html>

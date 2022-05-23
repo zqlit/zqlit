@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h2>距离专升本只有：
+        <span id="tian"></span>
+        <span id="shi"></span>
+        <span id="fen"></span>
+        <span id="miao"></span>
+    </h2>
+    </a></div>
+</body>
+<script type="text/javascript">
+    var time = new Date("2023-06-19 00:00:00");
+    countDown();
+    setInterval(countDown, 1000);
+    function countDown() {
+        var now_time = new Date();
+        var times = (time - now_time) / 1000;
+        var d = parseInt(times / 3600 / 24);
+        var h = parseInt(times / 3600 % 24);
+        var m = parseInt(times / 60 % 60);
+        var s = parseInt(times % 60);
+        document.getElementById("tian").innerHTML = d + "天";
+        document.getElementById("shi").innerHTML = h + "小时";
+        document.getElementById("fen").innerHTML = m + "分";
+        document.getElementById("miao").innerHTML = s + "秒";
+    }
+</script>
+
+</html>
