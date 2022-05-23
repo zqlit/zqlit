@@ -113,3 +113,27 @@ var allli = document.querySelectorAll('li')
         console.log(gethtml);
 ```
 
+#### 事件三要素
+
+事件是有三部分组成，分别是事件源，事件类型，事件处理程序
+
+这里我们称为事件三要素
+
+1.事件源 事件被触发的对象 谁 按钮
+
+2.事件类型 如何触发 什么事件 比如鼠标点击 鼠标经过 还是键盘输入等事件都属于事件类型
+
+3.事件处理程序 通过一个函数赋值的方式 完成
+
+```js
+   <button>普信男</button>
+    <script>
+        // 获取事件源
+        var btn = document.querySelector('button')
+        // 获取事件
+        btn.onclick = function () {
+            alert('真下头！')
+        }
+    </script>
+```
+
