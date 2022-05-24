@@ -202,3 +202,50 @@ var allli = document.querySelectorAll('li')
 
 比如 元素src herf属性
 
+##### 1.获取元素
+
+```js
+ <button id="slb">史卢比</button>
+    <button id="hcr">火柴人</button>
+    <img src="" alt="" width="100" height="100" title="">
+        var slb = document.getElementById('slb')
+        var hcr = document.getElementById('hcr')
+        var img = document.querySelector('img')
+```
+
+##### 2.注册事件
+
+当点击btn按钮执行更换图片的src和title属性值
+
+```js
+    slb.onclick = function () {
+            img.src = 'https://img.usj.cc/i/2022/05/24/628c72e9ec7b5.webp'
+            img.title = '史卢比'
+        }
+        hcr.onclick = function () {
+            img.src = 'https://img.usj.cc/i/2022/05/24/628c72f05eb49.webp'
+            img.title = '火柴人'
+        }
+```
+
+##### 3.完整源码
+
+```html
+    <button id="slb">史卢比</button>
+    <button id="hcr">火柴人</button>
+    <img src="" alt="" width="100" height="100" title="">
+    <script>
+        var slb = document.getElementById('slb')
+        var hcr = document.getElementById('hcr')
+        var img = document.querySelector('img')
+        slb.onclick = function () {
+            img.src = 'https://img.usj.cc/i/2022/05/24/628c72e9ec7b5.webp'
+            img.title = '史卢比'
+        }
+        hcr.onclick = function () {
+            img.src = 'https://img.usj.cc/i/2022/05/24/628c72f05eb49.webp'
+            img.title = '火柴人'
+        }
+    </script>
+```
+
