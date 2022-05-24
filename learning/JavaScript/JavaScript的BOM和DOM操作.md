@@ -152,3 +152,16 @@ var allli = document.querySelectorAll('li')
 ![image-20220524131011831](https://img.usj.cc/i/2022/05/24/628c68b4be3ff.png)
 
 3.执行操作 function函数
+
+#### 操作元素
+
+我们这里修改元素的内容
+
+例如 div里的文字 我们可以用innertext这个属性修改div原来的文字
+
+在这里我们需要遵循事件的三要素
+
+
+
+
+
