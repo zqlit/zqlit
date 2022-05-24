@@ -1,10 +1,10 @@
-### JavaScript的BOM和DOM操作
+# JavaScript的BOM和DOM操作
 
 #### api和web api的总结
 
 ![image-20220522152624595](https://img.usj.cc/i/2022/05/22/6289e59fd5019.png)
 
-#### DOM
+## DOM
 
 ![image-20220522200437612](https://img.usj.cc/i/2022/05/22/628a26d556ed9.png)
 
@@ -137,3 +137,18 @@ var allli = document.querySelectorAll('li')
     </script>
 ```
 
+#### 执行事件步骤
+
+1.获取事件源
+
+点击某个div，控制台输出，例如我被选中了
+
+2.绑定事件，注册事件
+
+例如 div.onclick
+
+常见的鼠标事件
+
+![image-20220524131011831](https://img.usj.cc/i/2022/05/24/628c68b4be3ff.png)
+
+3.执行操作 function函数
