@@ -276,3 +276,108 @@ var allli = document.querySelectorAll('li')
             why.innerHTML = '晚上好呀!'
         }
 ```
+
+#### 修改表单属性
+
+比如修改input表单元素的值，就不能使用innertext属性，需要使用value才可以
+
+当点击按钮之后我们可以用disabled === true，判断该按钮被点击过，在函数内部我们可以使用this指向事件函数的调用者
+
+```js
+    <button>点我</button>
+    <input type="text" value="普信男">
+    <script>
+        // 1.找到事件源
+        var btn = document.querySelector('button')
+        var input = document.querySelector('input')
+        // 2.注册事件
+        btn.onclick = function () {
+            input.value = '真下头'
+            this.disabled = true
+            // 这里的this 是指的是事件函数的调用者 btn
+        }
+
+    </script>
+```
+
+#### 仿京东密码输入表单
+
+首先构造好html样式，然后css写好之后
+
+获得事件源，眼睛，和input表单
+
+```js
+   var mm = document.getElementById('mm')
+        var eye = document.querySelector('img')
+```
+
+为了保证点击之后还可以点击使其闭眼，所以我们可以用使用flag算法
+
+```js
+     var flag = 0;
+        eye.onclick = function () {
+            if (flag == 0) {
+                flag = 1;
+            }
+            else {
+                flag = 0;
+            }
+        }
+```
+
+这样eye就可以不停的点击
+
+##### 完整源码
+
+```html
+ <style>
+        .box {
+            position: relative;
+            width: 400px;
+            margin: 100px auto;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .box input {
+            height: 30px;
+            width: 370px;
+            border: 0;
+            outline: none;
+        }
+
+        .box img {
+            width: 24px;
+            position: absolute;
+            top: 8px;
+            right: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <input type="password" name="" id="mm">
+        <label for="">
+            <img src="https://img.usj.cc/i/2022/05/24/628cb866e6d16.png" alt="">
+        </label>
+    </div>
+    <script>
+        var mm = document.getElementById('mm')
+        var eye = document.querySelector('img')
+        var flag = 0;
+        eye.onclick = function () {
+            if (flag == 0) {
+                mm.type = 'text'
+                eye.src = 'https://img.usj.cc/i/2022/05/24/628cb866e6d16.png'
+                flag = 1;
+            }
+            else {
+                mm.type = 'password'
+                eye.src = 'https://img.usj.cc/i/2022/05/24/628cb9a2ba6e0.png'
+                flag = 0;
+            }
+        }
+    </script>
+</body>
+```
+
