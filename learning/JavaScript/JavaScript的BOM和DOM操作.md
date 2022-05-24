@@ -249,3 +249,30 @@ var allli = document.querySelectorAll('li')
     </script>
 ```
 
+#### 分时问候语案例
+
+在不同的时间段打印输出不同的图片和文字
+
+例如早上好 中午好 晚上好
+
+##### 完整源码
+
+```js
+   <div id="why"></div>
+    <img src="" alt="">
+    <script>
+        var now = new Date();
+        var hour = now.getHours()
+        var why = document.getElementById('why')
+        var tu = document.querySelector('img')
+        if (0 < hour && hour < 8) {
+            tu.src = 'https://img.usj.cc/i/2022/05/24/628caa184a70f.gif'
+            why.innerHTML = '早上好呀!'
+        } else if (8 < hour && hour < 13) {
+            tu.src = 'https://img.usj.cc/i/2022/05/24/628cac6ed22d8.gif'
+            why.innerHTML = '中午好呀!'
+        } else if (13 < hour && hour < 24) {
+            tu.src = 'https://img.usj.cc/i/2022/05/24/628cac79141d8.gif'
+            why.innerHTML = '晚上好呀!'
+        }
+```
