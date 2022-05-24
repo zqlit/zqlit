@@ -381,3 +381,10 @@ var allli = document.querySelectorAll('li')
 </body>
 ```
 
+#### 修改样式属性
+
+1.我们可以通过js修改元素的颜色，大小，宽度等属性
+
+2.js里面的样式采用驼峰命名法，比如fontSize
+
+3.js修改style样式操作，产生的是行内样式，css的权重比较高
