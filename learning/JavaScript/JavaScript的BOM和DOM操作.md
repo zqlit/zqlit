@@ -1,3 +1,5 @@
+
+
 # JavaScript的BOM和DOM操作
 
 #### api和web api的总结
@@ -187,4 +189,16 @@ var allli = document.querySelectorAll('li')
 ```
 
 无需事件，刷新页面即可执行替换p标签的内容操作
+
+#### innerText和innerHTML区别
+
+1.innerText 不识别html标签，不是标准的，他会去除html的空格和换行
+
+2.innerHTML 识别html标签，是属于w3c标准的，保留空格和换行的
+
+3.这两个属性是可以读写的，可以通过log打印在控制台，也可以获取元素里面的内容
+
+#### 修改元素的属性
+
+比如 元素src herf属性
 
