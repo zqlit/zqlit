@@ -161,7 +161,30 @@ var allli = document.querySelectorAll('li')
 
 在这里我们需要遵循事件的三要素
 
+##### 获取事件执行某些命令
 
+```js
+    <button>获取系统时间</button>
+    <div>点击botton获取最新时间哟!</div>
+    <p>刷新页面获取最新时间哦</p>
+    <script>
+        var btn = document.querySelector('button')
+        var div = document.querySelector('div')
+        var ptags = document.querySelector('p')
+        btn.onclick = function () {
+            div.innerText = "我是时间哦"
+        }
+```
 
+当我们点击btn按钮之后，改变div的值
 
+##### 刷新页面即执行某些操作
+
+```js
+<p>刷新页面获取最新时间哦</p>
+  var ptags = document.querySelector('p')
+        ptags.innerText = '卧槽牛皮'
+```
+
+无需事件，刷新页面即可执行替换p标签的内容操作
 
