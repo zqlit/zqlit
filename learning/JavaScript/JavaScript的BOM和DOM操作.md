@@ -388,3 +388,45 @@ var allli = document.querySelectorAll('li')
 2.js里面的样式采用驼峰命名法，比如fontSize
 
 3.js修改style样式操作，产生的是行内样式，css的权重比较高
+
+#### 淘宝二维码关闭示例
+
+点击x按钮关闭
+
+#### 完整源码
+
+```js
+    <style>
+        .ewm {
+            width: 250px;
+            height: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .x {
+            width: 33px;
+            height: 22px;
+            position: absolute;
+            border: 1px solid #ccc;
+            right: -38px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ewm">
+        <img src="https://img.usj.cc/i/2022/05/25/628e340e03727.png" alt="">
+        <div class="x">关闭</div>
+    </div>
+    <script>
+        var x = document.querySelector('.x')
+        var ewm = document.querySelector('.ewm')
+        x.onclick = function () {
+            ewm.style.display = 'none'
+        }
+    </script>
+</body>
+```
+
