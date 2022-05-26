@@ -430,3 +430,5 @@ var allli = document.querySelectorAll('li')
 </body>
 ```
 
+#### 焦点事件
+
