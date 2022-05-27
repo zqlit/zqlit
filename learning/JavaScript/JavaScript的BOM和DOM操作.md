@@ -432,3 +432,13 @@ var allli = document.querySelectorAll('li')
 
 #### 焦点事件
 
+##### onfocus事件
+
+鼠标点击事件，当鼠标定点在焦点上，就执行该事件
+
+但测试Chrome浏览器无法执行该事件
+
+##### onblur事件
+
+鼠标离开焦点事件 
+
