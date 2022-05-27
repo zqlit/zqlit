@@ -597,3 +597,111 @@ var allli = document.querySelectorAll('li')
 </body>
 ```
 
+#### 百度换肤示例
+
+构建基础html+css
+
+```js
+ <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url() no-repeat center top;
+        }
+
+        ul {
+            margin: 0 auto;
+            width: 440px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+
+        li img {
+            float: left;
+            width: 100px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="baidu">
+        <li><img src="images/1.jpg" alt=""></li>
+        <li><img src="images/1.jpg" alt=""></li>
+        <li><img src="images/1.jpg" alt=""></li>
+        <li><img src="images/1.jpg" alt=""></li>
+    </ul>
+</body>
+```
+
+1.获取ul里面的所有img,这里我们给ul img属性
+
+```js
+ var imgs = document.querySelector('.baidu').querySelectorAll('img')
+```
+
+2.遍历所有的img，然后创建事件
+
+```js
+ for (var i = 0; i < imgs.length; i++) {
+            imgs[i].onclick = function () {
+                document.body.style.backgroundImage = 'url(' + this.src + ')'
+            }
+        }
+```
+
+##### 完整源码
+
+```js
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url() no-repeat center top;
+        }
+
+        ul {
+            margin: 0 auto;
+            width: 440px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+
+        li img {
+            float: left;
+            width: 100px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="baidu">
+        <li><img src="images/1.jpg" alt=""></li>
+        <li><img src="images/1.jpg" alt=""></li>
+        <li><img src="images/1.jpg" alt=""></li>
+        <li><img src="images/1.jpg" alt=""></li>
+    </ul>
+    <script>
+        var imgs = document.querySelector('.baidu').querySelectorAll('img')
+        for (var i = 0; i < imgs.length; i++) {
+            imgs[i].onclick = function () {
+                document.body.style.backgroundImage = 'url(' + this.src + ')'
+            }
+        }
+    </script>
+</body>
+```
+
