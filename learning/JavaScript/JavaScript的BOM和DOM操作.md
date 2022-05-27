@@ -705,3 +705,47 @@ var allli = document.querySelectorAll('li')
 </body>
 ```
 
+#### 鼠标悬停tr显示选中颜色
+
+```js
+<body>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>电话</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>小王</td>
+                <td>18</td>
+                <td>110</td>
+            </tr>
+            <tr>
+                <td>小白</td>
+                <td>19</td>
+                <td>119</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        // 1.首先获取tbody的所有tr元素
+        var gettr = document.querySelector('tbody').querySelectorAll('tr')
+        // 2.利用遍历，将所有tr元素遍历出来
+        for (var i = 0; i < gettr.length; i++) {
+            // 注册事件，鼠标悬停时的时候触发的事件
+            gettr[i].onmouseover = function () {
+                this.style.backgroundColor = 'pink'
+            }
+            // 注册事件，鼠标离开的时候触发的事件
+            gettr[i].onmouseout = function () {
+                this.style.backgroundColor = '';
+            }
+        }
+    </script>
+</body>
+```
+
