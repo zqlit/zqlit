@@ -444,3 +444,92 @@ var allli = document.querySelectorAll('li')
 
 但测试Chrome浏览器无法执行该事件
 
+#### 使用className修改元素属性
+
+##### className
+
+1.如果样式修改较多，可以采取操作类名方式更改元素样式
+
+2.class因为是个保留字，因此使用className来操作元素类名属性
+
+3.className 会直接更改元素的类名，会覆盖原先的类名
+
+```js
+    <style>
+        .change {
+            font-size: 32px;
+            color: blue;
+        }
+
+        .first {
+            font-size: 16px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">文本</div>
+    <script>
+        var text = document.querySelector('.first')
+        text.onclick = function () {
+            this.className = 'change'
+        }
+    </script>
+</body>
+```
+
+#### 表单校验案例
+
+1.首先判断事件，表单失去焦点onblur
+
+2.然后改变p标签的文字和颜色
+
+##### 完整源码
+
+```js
+    <style>
+        .box {
+            width: 600px;
+            margin: 100px auto;
+        }
+
+        .massage {
+            display: inline-block;
+            font-size: 12px;
+            color: #999;
+            background: url() no-repeat left center;
+            padding-left: 20px;
+        }
+
+        .wrong {
+            color: red;
+        }
+
+        .right {
+            color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <input type="password" class="ipt">
+        <p class="massage">请输入6-16位密码</p>
+        <script>
+            var ipt = document.querySelector('.ipt')
+            var massage = document.querySelector('.massage')
+            ipt.onblur = function () {
+                if (this.value.length < 6 || this.value.length > 16) {
+                    massage.innerHTML = "请确保密码在6-16位哦!"
+                    massage.className = 'massage wrong'
+                } else {
+                    massage.innerHTML = "校验正确哦!"
+                    massage.className = 'massage right'
+                }
+            }
+        </script>
+    </div>
+</body>
+```
+
