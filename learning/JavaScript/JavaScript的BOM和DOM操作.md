@@ -442,3 +442,5 @@ var allli = document.querySelectorAll('li')
 
 鼠标离开焦点事件 
 
+但测试Chrome浏览器无法执行该事件
+
