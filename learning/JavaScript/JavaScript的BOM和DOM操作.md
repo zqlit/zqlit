@@ -533,3 +533,67 @@ var allli = document.querySelectorAll('li')
 </body>
 ```
 
+#### 小灯开关示例
+
+使用flag算法
+
+```js
+<body>
+    <button>小灯开关</button>
+    <script>
+        var btn = document.querySelector('button')
+        var getbody = document.body
+        var flag = 0
+        btn.onclick = function () {
+            if (flag == 0) {
+                getbody.style.backgroundColor = '#000'
+                flag = 1;
+            } else {
+                getbody.style.backgroundColor = '#fff'
+                flag = 0;
+            }
+        }
+    </script>
+</body>
+```
+
+#### 排他思想-算法
+
+1.首先获取所有的btn按钮元素
+
+2.遍历所有的btn按钮
+
+3.注册事件 当点击每一个btn按钮 会出现啥
+
+4.排除其他元素的干扰 干掉其他元素的背景颜色
+
+##### 总结
+
+首先先排除其他人，然后才设置自己的样式 这种排除其他人的思想我们称为排他思想
+
+##### 完整源码
+
+```js
+<body>
+    <button>按钮1</button>
+    <button>按钮1</button>
+    <button>按钮1</button>
+    <script>
+        // 1.首先获取所有的btn按钮元素
+        var btn = document.querySelectorAll('button')
+        // 2.遍历所有的btn按钮
+        for (var i = 0; i < btn.length; i++) {
+            // 3.注册事件 当点击每一个btn按钮 会出现啥
+            btn[i].onclick = function () {
+                // 4.排除其他元素的干扰 干掉其他元素的背景颜色
+                for (var i = 0; i < btn.length; i++) {
+                    btn[i].style.backgroundColor = ""
+                }
+                this.style.backgroundColor = "red"
+            }
+        }
+        // 总结：首先先排除其他人，然后才设置自己的样式 这种排除其他人的思想我们称为排他思想
+    </script>
+</body>
+```
+
