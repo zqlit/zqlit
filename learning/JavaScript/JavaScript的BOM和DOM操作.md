@@ -845,3 +845,50 @@ var allli = document.querySelectorAll('li')
     </script>
 ```
 
+#### 设置和移除自定义属性
+
+##### setAttribute
+
+###### 语法
+
+```
+setAttribute('属性', '值')
+```
+
+###### 示例
+
+```js
+box.setAttribute('zql', '3')
+```
+
+###### 说明
+
+该属性主要用于修改自定义属性，例如class和id我们使用老方法修改
+
+###### 示例
+
+```js
+  <div class="box" id="boxs" zql="1"></div>
+    <script>
+        var box = document.querySelector('#boxs')
+        box.setAttribute('zql', '3')
+        box.className = 'hello'
+        box.id = 'wocao'
+        box.setAttribute('id', 'rnm')
+    </script>
+```
+
+##### removeAttribute
+
+removeAttribute('属性')
+
+用于移除自定义属性
+
+```js
+  <div class="box" id="boxs" zql="1"></div>
+    <script>
+        var box = document.querySelector('#boxs')
+        box.removeAttribute('zql')
+    </script>
+```
+
