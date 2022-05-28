@@ -816,3 +816,32 @@ var allli = document.querySelectorAll('li')
 </body>
 ```
 
+#### 获取自定义属性值
+
+##### getAttribute
+
+可以获取元素的属性值的参数，例如
+
+也可以获取自定义的属性
+
+例如zql，可以通过该方法取到zql属性的参数"wocao"
+
+```js
+<dic id="box" class="boxs" zql="wocao"></dic>
+```
+
+该div的id的box我们可以用该方法取到box的值
+
+##### 属性值.id 和 属性值.className
+
+```js
+ <dic id="box" class="boxs" zql="wocao"></dic>
+    <script>
+        var box = document.querySelector('#box')
+        console.log(box.getAttribute('id'));
+        console.log(box.getAttribute('zql'));
+        console.log(box.id);
+        console.log(box.className);
+    </script>
+```
+
