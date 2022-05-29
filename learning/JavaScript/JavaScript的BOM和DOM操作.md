@@ -1037,3 +1037,107 @@ dataset是一个集合里面存放了所有以data开头的自定义属性
     </script>
 ```
 
+#### 节点操作
+
+##### 节点概述
+
+![image-20220529162903964](https://img.usj.cc/i/2022/05/29/62932ed08ce38.png)
+
+##### 特点
+
+逻辑性比较强，但是兼容性不如默认获取元素方法强，例如querySelector
+
+##### parentNode
+
+取得父级节点的元素
+
+例如
+
+```html
+<body>
+    <div class="bigbox">
+        <div class="box">
+            <span class="boxs"></span>
+        </div>
+    </div>
+    <script>
+        var boxs = document.querySelector('.boxs')
+        boxs.parentNode
+        console.log(boxs.parentNode);
+    </script>
+</body>
+```
+
+只需要boxs.parentNode即可获取boxs的父级元素
+
+##### 注意
+
+得到的是离元素最近的父级节点（亲爸爸），如果找不到父级节点，则返回null
+
+#### 节点操作获取子节点
+
+##### childNodes
+
+通过该方法可以获取该父级的所有子节点，其中包含元素节点，文本节点，例如换行也是一个文本节点
+
+```html
+    <ul>
+        <li>我是第一个1</li>
+        <li>我是第一个2</li>
+        <li>我是第一个3</li>
+        <li>我是第一个4</li>
+    </ul>
+    <script>
+        var ul = document.querySelector('ul')
+        console.log(ul.childNodes);
+        console.log(ul.childNodes[1].nodeType);
+    </script>
+```
+
+这个方法十分的繁琐，我们需要通过for循环里面if判断才可以筛选出元素节点
+
+##### children
+
+使用该方法可以直接获取元素节点，但是这个方法不被官方承认，但是被各个浏览器兼容
+
+```html
+  <ul>
+        <li>我是第一个1</li>
+        <li>我是第一个2</li>
+        <li>我是第一个3</li>
+        <li>我是第一个4</li>
+    </ul>
+    <script>
+        var ul = document.querySelector('ul')
+        console.log(ul.children);
+    </script>
+```
+
+#### 节点操作之获取第一个元素节点和最后一个节点
+
+##### firstChild和lastChild
+
+获取父级节点的子节点的第一个和最后一个
+
+但是这个方法是获取的子元素的第一个节点，所以不会排除文本节点
+
+我们往往获取到的是文本节点，实际意义不大
+
+##### firstElementChild和lastElementChild
+
+此方法可以获取第一个元素节点和最后一个元素节点
+
+但是兼容性较差，ie9以上版本才可以支持
+
+##### 建议方法
+
+##### 父级节点.children[0]
+
+获取第一个子元素节点，且是元素节点，兼容性比较好
+
+##### 父级节点.children[ol.children.length - 1]
+
+获取最后一个子元素节点，且是元素节点，兼容性比较好
+
+
+
