@@ -1115,7 +1115,7 @@ dataset是一个集合里面存放了所有以data开头的自定义属性
 
 #### 节点操作之获取第一个元素节点和最后一个节点
 
-##### firstChild和lastChild
+###### firstChild和lastChild
 
 获取父级节点的子节点的第一个和最后一个
 
@@ -1123,7 +1123,7 @@ dataset是一个集合里面存放了所有以data开头的自定义属性
 
 我们往往获取到的是文本节点，实际意义不大
 
-##### firstElementChild和lastElementChild
+###### firstElementChild和lastElementChild
 
 此方法可以获取第一个元素节点和最后一个元素节点
 
@@ -1131,13 +1131,147 @@ dataset是一个集合里面存放了所有以data开头的自定义属性
 
 ##### 建议方法
 
-##### 父级节点.children[0]
+###### 父级节点.children[0]
 
 获取第一个子元素节点，且是元素节点，兼容性比较好
 
-##### 父级节点.children[ol.children.length - 1]
+###### 父级节点.children[ol.children.length - 1]
 
 获取最后一个子元素节点，且是元素节点，兼容性比较好
 
+#### 新浪下拉菜单
 
+##### 完整案例
+
+```html
+ <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .nav {
+            margin: 100px;
+        }
+
+        .nav>li {
+            position: relative;
+            float: left;
+            width: 80px;
+            height: 41px;
+            text-align: center;
+        }
+
+        .nav li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 41px;
+            color: #333;
+        }
+
+        .nav>li>a:hover {
+            background-color: #eee;
+        }
+
+        .nav ul {
+            display: none;
+            position: absolute;
+            top: 41px;
+            left: 0;
+            width: 100%;
+            border-left: 1px solid #FECC5B;
+            border-right: 1px solid #FECC5B;
+        }
+
+        .nav ul li {
+            border-bottom: 1px solid #FECC5B;
+        }
+
+        .nav ul li a:hover {
+            background-color: #FFF5DA;
+        }
+    </style>
+<body>
+    <ul class="nav">
+        <li>
+            <a href="#">微博</a>
+            <ul>
+                <li>
+                    <a href="">私信</a>
+                </li>
+                <li>
+                    <a href="">评论</a>
+                </li>
+                <li>
+                    <a href="">@我</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">微博</a>
+            <ul>
+                <li>
+                    <a href="">私信</a>
+                </li>
+                <li>
+                    <a href="">评论</a>
+                </li>
+                <li>
+                    <a href="">@我</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">微博</a>
+            <ul>
+                <li>
+                    <a href="">私信</a>
+                </li>
+                <li>
+                    <a href="">评论</a>
+                </li>
+                <li>
+                    <a href="">@我</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">微博</a>
+            <ul>
+                <li>
+                    <a href="">私信</a>
+                </li>
+                <li>
+                    <a href="">评论</a>
+                </li>
+                <li>
+                    <a href="">@我</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        var nav = document.querySelector('.nav')
+        var lis = nav.children
+        for (var i = 0; i < lis.length; i++) {
+            lis[i].onmouseover = function () {
+                this.children[1].style.display = 'block'
+            }
+            lis[i].onmouseout = function () {
+                this.children[1].style.display = 'none'
+            }
+        }
+    </script>
+</body>
+```
 
