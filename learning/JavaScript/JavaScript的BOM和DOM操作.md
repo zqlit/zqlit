@@ -892,3 +892,148 @@ removeAttribute('属性')
     </script>
 ```
 
+#### tab栏目切换案例
+
+##### 完整源码
+
+```html
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .tab {
+            width: 978px;
+            margin: 100px auto;
+        }
+
+        .tab_list {
+            height: 39px;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab_list li {
+            float: left;
+            height: 39px;
+            line-height: 39px;
+            padding: 0 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .tab_list .current {
+            background-color: #c81623;
+            color: #fff;
+        }
+
+        .item_info {
+            padding: 20px 0 0 20px;
+        }
+
+        .item {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab">
+        <div class="tab_list">
+            <ul>
+                <li class="current">商品介绍</li>
+                <li>规格与包装</li>
+                <li>售后保障</li>
+                <li>商品评价（50000）</li>
+                <li>手机社区</li>
+            </ul>
+        </div>
+        <div class="tab_con">
+            <div class="item" style="display: block;">
+                商品介绍模块内容
+            </div>
+            <div class="item">
+                规格与包装模块内容
+            </div>
+            <div class="item">
+                售后保障模块内容
+            </div>
+            <div class="item">
+                商品评价（50000）模块内容
+            </div>
+            <div class="item">
+                手机社区模块内容
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var lis = document.querySelector('.tab_list').querySelectorAll('li');
+        var items = document.querySelectorAll('.item');
+        for (var i = 0; i < lis.length; i++) {
+            // 开始给5个小li 设置索引号 
+            lis[i].setAttribute('index', i)
+            // 这里需要双向绑定
+            items[i].setAttribute('index', i)
+            // 1.创建点击事件
+            lis[i].onclick = function () {
+                // 1. 上的模块选项卡，点击某一个，当前这一个底色会是红色，其余不变（排他思想） 修改类名的方式
+                // 干掉所有人 其余的li清除 class 这个类
+                for (var i = 0; i < lis.length; i++) {
+                    lis[i].className = ''
+                }
+                this.className = 'current'
+                // 2.显示内容
+                var index = this.getAttribute('index')
+                console.log(index);
+                for (var i = 0; i < items.length; i++) {
+                    items[i].style.display = 'none'
+                }
+                items[index].style.display = 'block';
+            }
+        }
+    </script>
+</body>
+```
+
+#### h5自定义属性
+
+在h5中，规定自定义属性必须使用data-开头来命名自定义属性
+
+当然我们也可以使用getAttribute('date-time')，获取，因为此方法的兼容性更好
+
+##### h5的新规
+
+我们可以通过 对象.dataset.属性名获取自定义属性
+
+例如
+
+```html
+<div data-time="520" data-list-name="andy"></div>
+    <script>
+        var div = document.querySelector('div')
+        console.log(div.dataset.time);
+    </script>
+```
+
+h5新增的获取自定义属性的方法，它只能后去data-开头的
+
+dataset是一个集合里面存放了所有以data开头的自定义属性
+
+如果自定义属性里面有多个-链接的单词，我们获取的时候采取，驼峰命名法
+
+例如
+
+```html
+    <div data-time="520" data-list-name="andy"></div>
+    <script>
+        var div = document.querySelector('div')
+        console.log(div.dataset.listName);
+    </script>
+```
+
