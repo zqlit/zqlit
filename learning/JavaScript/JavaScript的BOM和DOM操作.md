@@ -1275,7 +1275,76 @@ dataset是一个集合里面存放了所有以data开头的自定义属性
 </body>
 ```
 
-#### 节点操作之兄弟节点
+#### 节点操作之创建节点
 
+#### createElement
 
+创建一个元素节点，这里可以自定义
+
+```js
+        // 选中ul元素
+        var ul = document.querySelector('ul')
+        // 选中li元素
+        var li = document.querySelectorAll('li')
+        // 创建一个元素li
+        var lis = document.createElement('li')
+```
+
+#### insertBefore
+
+在指定元素前面添加元素节点
+
+```js
+        // 选中ul元素
+        var ul = document.querySelector('ul')
+        // 选中li元素
+        var li = document.querySelectorAll('li')
+        // 创建一个元素li
+        var lis = document.createElement('li')
+        ul.insertBefore(lis, li[0])
+```
+
+#### appendChild
+
+在元素的后面添加元素节点
+
+ul.appendChild(lis)，是指在ul元素后面加lis的元素节点方法
+
+```js
+        // 选中ul元素
+        var ul = document.querySelector('ul')
+        // 选中li元素
+        var li = document.querySelectorAll('li')
+        // 创建一个元素li
+        var lis = document.createElement('li')
+        ul.appendChild(lis)
+```
+
+#### 简单的留言发布案例
+
+```html
+ <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button>biu~</button>
+    <ul>
+
+    </ul>
+    <script>
+        var text = document.querySelector('textarea')
+        var btn = document.querySelector('button')
+        var ul = document.querySelector('ul')
+        btn.onclick = function () {
+            if (text.value == '') {
+                alert('你没输入内容哦!')
+                return false;
+            } else {
+                // 创建节点
+                var li = document.createElement('li')
+                // 添加内容
+                li.innerHTML = text.value
+                // 添加节点
+                ul.appendChild(li)
+            }
+        }
+    </script>
+```
 
