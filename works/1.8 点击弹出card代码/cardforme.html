@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+    <title>点击文字弹出一个DIV层窗口代码</title>
+    <style>
+        .black_overlay {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, .1);
+            backdrop-filter: blur(4px);
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=88);
+        }
+
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 55%;
+            height: 55%;
+            padding: 20px;
+            z-index: 1002;
+            /* overflow: auto; */
+        }
+    </style>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <p>示例弹出层：<a href="javascript:void(0)"
+            onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">请点这里</a>
+    </p>
+    <div id="light" class="white_content">
+        <!-- 这是card示例 -->
+        <div class="movie_card" id="bright">
+            <div class="info_section">
+                <div class="movie_header">
+                    <img class="locandina" src="https://img.usj.cc/i/2022/06/16/62ab1efc9f717.png" />
+                    <h1>小赵同学</h1>
+                    <h4>2001, 湖北 襄阳</h4>
+                    <span class="minutes">web 前端</span>
+                    <p class="type">css, js, python</p>
+                </div>
+                <div class="movie_desc">
+                    <p class="text">
+                        Set in a world where fantasy creatures live side by side with humans. A human cop is forced to
+                        work with an Orc to find a weapon everyone is prepared to kill for.
+                    </p>
+                </div>
+                <div class="movie_social">
+                    <ul>
+                        <li><i class="material-icons">share</i></li>
+                        <li><i class="material-icons"></i></li>
+                        <li><i class="material-icons">chat_bubble</i></li>
+                        <a href="javascript:void(0)"
+                            onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
+                            <i class="material-icons"
+                                style="position: absolute;top: 12px;left: 762px;color: #fff;">disabled_by_default</i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="blur_back bright_back"></div>
+        </div>
+    </div>
+    <div id="fade" class="black_overlay"></div>
+</body>
+
+</html>
