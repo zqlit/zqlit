@@ -1,0 +1,11 @@
+2022-07-08 09:44:11,552 [1] INFO  Log1 - v2rayN start up | v2rayN - V5.23 - 2022/05/06 | D:\zql\imzql\sundries\v2rayN\v2rayN.exe
+2022-07-08 09:44:22,030 [1] DEBUG Log2 - Base64Decode
+2022-07-08 09:44:22,030 [1] DEBUG Log2 - System.FormatException: 输入的不是有效的 Base-64 字符串，因为它包含非 Base-64 字符、两个以上的填充字符，或者填充字符间包含非法字符。
+   在 System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   在 System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   在 System.Convert.FromBase64String(String s)
+   在 v2rayN.Utils.Base64Decode(String plainText)
+2022-07-08 09:45:12,182 [4] INFO  Log1 - UpdateTaskRun
+2022-07-08 12:56:11,834 [1] INFO  Log1 - MyAppExit Begin
+2022-07-08 12:56:11,974 [1] INFO  Log1 - MyAppExit End
+2022-07-08 14:31:49,528 [1] INFO  Log1 - v2rayN start up | v2rayN - V5.23 - 2022/05/06 | D:\zql\imzql\sundries\v2rayN\v2rayN.exe

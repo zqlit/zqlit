@@ -1,7 +1,7 @@
 {
   "logEnabled": false,
   "loglevel": "warning",
-  "indexId": "4642273282973109330",
+  "indexId": "5712462163802026412",
   "muxEnabled": false,
   "sysProxyType": 1,
   "enableStatistics": false,
@@ -11,7 +11,7 @@
   "defAllowInsecure": false,
   "domainStrategy": "IPIfNonMatch",
   "domainMatcher": "linear",
-  "routingIndex": 0,
+  "routingIndex": 2,
   "enableRoutingAdvanced": true,
   "ignoreGeoUpdateCore": false,
   "systemProxyExceptions": "",
@@ -31,33 +31,7 @@
       "pass": ""
     }
   ],
-  "vmess": [
-    {
-      "indexId": "4642273282973109330",
-      "configType": 5,
-      "configVersion": 2,
-      "sort": 0,
-      "address": "qiangzai.q6q.cc",
-      "port": 443,
-      "id": "111ee330-bf56-4f2e-b35c-13c46c596656",
-      "alterId": 0,
-      "security": "none",
-      "network": "ws",
-      "remarks": "强仔",
-      "headerType": "",
-      "requestHost": "",
-      "path": "/522a59aab8/",
-      "streamSecurity": "tls",
-      "allowInsecure": "False",
-      "testResult": "   265ms",
-      "subid": "",
-      "flow": "",
-      "sni": "",
-      "alpn": [],
-      "groupId": "",
-      "coreType": null
-    }
-  ],
+  "vmess": [],
   "kcpItem": {
     "mtu": 1350,
     "tti": 50,
@@ -70,7 +44,7 @@
   "subItem": [],
   "uiItem": {
     "enableAutoAdjustMainLvColWidth": true,
-    "mainLocation": "115, 436",
+    "mainLocation": "316, 121",
     "mainSize": "1287, 788",
     "mainLvColWidth": {
       "def": 30,
