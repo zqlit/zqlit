@@ -70,8 +70,8 @@
   "subItem": [],
   "uiItem": {
     "enableAutoAdjustMainLvColWidth": true,
-    "mainLocation": "316, 121",
-    "mainSize": "1287, 788",
+    "mainLocation": "315, 131",
+    "mainSize": "1930, 1257",
     "mainLvColWidth": {
       "def": 30,
       "configType": 80,

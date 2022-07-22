@@ -1,0 +1,2 @@
+2022-07-20 08:54:09,941 [1] INFO  Log1 - MyAppExit Begin
+2022-07-20 08:54:10,272 [1] INFO  Log1 - MyAppExit End
