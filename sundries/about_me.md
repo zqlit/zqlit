@@ -1,4 +1,4 @@
-<div id="md-editor-rt" class="md md-previewOnly"><div class="md-content"><div id="md-preview" class="md-preview vuepress-theme"><p><a href="#">hello！你可以叫我小赵同学，一直居住在汉江中游的城市<br>性格慢热，乐于助人，感谢朋友能在此小站停下脚步<br>此小站是本人的自建网盘，如果想继续探索请仔细阅读说明哈</a></p>
+<div id="md-editor-rt" class="md md-previewOnly"><div class="md-content"><div id="md-preview" class="md-preview vuepress-theme">
 <h4 id="请我喝杯奶茶"><a href="#请我喝杯奶茶">请我喝杯奶茶</a></h4><blockquote>
 <p>赞助我&nbsp;<strong><a href="https://gcore.jsdelivr.net/gh/imzql/imzql/sundries/img/pay.png">pay</a></strong>.</p>
 </blockquote>
