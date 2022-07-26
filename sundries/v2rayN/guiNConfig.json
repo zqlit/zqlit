@@ -56,6 +56,31 @@
       "alpn": [],
       "groupId": "",
       "coreType": null
+    },
+    {
+      "indexId": "4925020697706459019",
+      "configType": 1,
+      "configVersion": 2,
+      "sort": 0,
+      "address": "45.42.215.223",
+      "port": 48536,
+      "id": "e71b5a1c-e180-4735-f1c5-d0e8b4d9eead",
+      "alterId": 0,
+      "security": "auto",
+      "network": "tcp",
+      "remarks": "z",
+      "headerType": "none",
+      "requestHost": "",
+      "path": "",
+      "streamSecurity": "none",
+      "allowInsecure": "False",
+      "testResult": "",
+      "subid": "",
+      "flow": "",
+      "sni": "",
+      "alpn": [],
+      "groupId": "",
+      "coreType": null
     }
   ],
   "kcpItem": {
@@ -70,8 +95,8 @@
   "subItem": [],
   "uiItem": {
     "enableAutoAdjustMainLvColWidth": true,
-    "mainLocation": "-32000, -32000",
-    "mainSize": "314, 50",
+    "mainLocation": "315, 131",
+    "mainSize": "1930, 1257",
     "mainLvColWidth": {
       "def": 30,
       "configType": 80,
