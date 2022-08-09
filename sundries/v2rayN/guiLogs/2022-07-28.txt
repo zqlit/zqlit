@@ -1,0 +1,4 @@
+2022-07-28 08:45:59,795 [1] INFO  Log1 - v2rayN start up | v2rayN - V5.23 - 2022/07/18 | D:\Github\imzql\sundries\v2rayN\v2rayN.exe
+2022-07-28 08:47:00,316 [4] INFO  Log1 - UpdateTaskRun
+2022-07-28 16:56:59,324 [1] INFO  Log1 - MyAppExit Begin
+2022-07-28 16:56:59,474 [1] INFO  Log1 - MyAppExit End
