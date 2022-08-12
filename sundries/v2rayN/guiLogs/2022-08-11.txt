@@ -1,0 +1,30 @@
+2022-08-11 08:42:20,382 [1] INFO  Log1 - v2rayN start up | v2rayN - V5.23 - 2022/07/18 | D:\Github\imzql\sundries\v2rayN\v2rayN.exe
+2022-08-11 08:43:20,999 [4] INFO  Log1 - UpdateTaskRun
+2022-08-11 10:00:05,755 [1] INFO  Log1 - MyAppExit Begin
+2022-08-11 10:00:06,074 [1] INFO  Log1 - MyAppExit End
+2022-08-11 10:00:06,194 [1] INFO  Log1 - MyAppExit Begin
+2022-08-11 10:00:06,316 [1] INFO  Log1 - MyAppExit End
+2022-08-11 13:01:16,597 [1] INFO  Log1 - v2rayN start up | v2rayN - V5.23 - 2022/07/18 | D:\Github\imzql\sundries\v2rayN\v2rayN.exe
+2022-08-11 13:02:17,184 [4] INFO  Log1 - UpdateTaskRun
+2022-08-11 13:08:38,371 [1] INFO  Log1 - MyAppExit Begin
+2022-08-11 13:08:38,629 [1] INFO  Log1 - MyAppExit End
+2022-08-11 13:08:38,776 [1] INFO  Log1 - MyAppExit Begin
+2022-08-11 13:08:38,949 [1] INFO  Log1 - MyAppExit End
+2022-08-11 13:23:35,547 [1] INFO  Log1 - v2rayN start up | v2rayN - V5.23 - 2022/07/18 | D:\Github\imzql\sundries\v2rayN\v2rayN.exe
+2022-08-11 13:24:36,057 [4] INFO  Log1 - UpdateTaskRun
+2022-08-11 13:24:59,713 [1] INFO  Log1 - MyAppExit Begin
+2022-08-11 13:25:00,000 [1] INFO  Log1 - MyAppExit End
+2022-08-11 13:25:00,093 [1] INFO  Log1 - MyAppExit Begin
+2022-08-11 13:25:00,212 [1] INFO  Log1 - MyAppExit End
+2022-08-11 18:01:07,195 [1] INFO  Log1 - v2rayN start up | v2rayN - V5.23 - 2022/07/18 | D:\Github\imzql\sundries\v2rayN\v2rayN.exe
+2022-08-11 18:02:07,604 [4] INFO  Log1 - UpdateTaskRun
+2022-08-11 19:23:07,932 [1] INFO  Log1 - MyAppExit Begin
+2022-08-11 19:23:08,217 [1] INFO  Log1 - MyAppExit End
+2022-08-11 19:23:08,395 [1] INFO  Log1 - MyAppExit Begin
+2022-08-11 19:23:08,540 [1] INFO  Log1 - MyAppExit End
+2022-08-11 20:29:51,606 [1] INFO  Log1 - v2rayN start up | v2rayN - V5.23 - 2022/07/18 | D:\Github\imzql\sundries\v2rayN\v2rayN.exe
+2022-08-11 20:30:52,524 [4] INFO  Log1 - UpdateTaskRun
+2022-08-11 20:41:00,693 [1] INFO  Log1 - MyAppExit Begin
+2022-08-11 20:41:00,908 [1] INFO  Log1 - MyAppExit End
+2022-08-11 20:41:00,984 [1] INFO  Log1 - MyAppExit Begin
+2022-08-11 20:41:01,077 [1] INFO  Log1 - MyAppExit End
