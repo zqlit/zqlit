@@ -5,10 +5,10 @@
 <table>
 	<tr>
 	<th>
-		<a href="https://github.com/anuraghazra/github-readme-stats"><img src="https://github-readme-stats.vercel.app/api?username=imzql&show_icons=true&include_all_commits=true&theme=dark&hide_border=true" style="max-width: 98%;"></a>
+		<a href="https://github.com/anuraghazra/github-readme-stats"><img src="https://github-readme-stats.vercel.app/api?username=imzql&show_icons=true&include_all_commits=true&theme=radical&hide_border=true" style="max-width: 98%;"></a>
 	</th>
 	<th>
-		<a href="https://github.com/anuraghazra/github-readme-stats"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=imzql&layout=compact&theme=dark&hide_border=true" style="max-width: 98%;"></a>
+		<a href="https://github.com/anuraghazra/github-readme-stats"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=imzql&layout=compact&theme=radical&hide_border=true" style="max-width: 98%;"></a>
 	</th>
 	</tr>
 	</table>
