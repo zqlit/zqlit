@@ -12,13 +12,3 @@
 	</th>
 	</tr>
 	</table>
-	<table>
-	<tr>
-	<td>
-		🚀 Special thanks to JetBrains for providing me with a free license through their Open Source License program.
-	</td>
-	<td>
-		<img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" height="228" alt="JetBrains Logo (Main) logo.">
-	</td>
-	</tr>
-	</table>
