@@ -4,7 +4,7 @@
 
 <table>
 	<tr>
-	<th>
+	<th style="margin-left:2px;">
 		<a href="https://github.com/anuraghazra/github-readme-stats"><img src="https://github-readme-stats.vercel.app/api?username=Higurashi-kagome&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" style="max-width: 100%;"></a>
 	</th>
 	<th>
