@@ -1,14 +1,5 @@
 ### 你好，请叫我小赵同学！ 👋
 
-<!-- <img align="center" src="https://github-readme-stats.vercel.app/api?username=imzql&show_icons=true&icon_color=CE1D2D&text_color=718096&bg_color=ffffff&hide_title=true" /> -->
-
-<table>
-	<tr>
-	<th>
-		<a href="https://github.com/anuraghazra/github-readme-stats"><img src="https://github-readme-stats.vercel.app/api?username=imzql&show_icons=true&include_all_commits=true&hide_border=true" style="max-width: 98%;"></a>
-	</th>
-	<th>
-		<a href="https://github.com/anuraghazra/github-readme-stats"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=imzql&layout=compact&hide_border=true" style="max-width: 98%;"></a>
-	</th>
-	</tr>
-	</table>
+|<img src="https://github-readme-streak-stats.herokuapp.com?user=imzql&theme=vue&locale=zh_Hans&date_format=%5BY.%5Dn.j&hide_border=true" alt="GitHub Streak" width="500"/>|
+|---|
+|<img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=imzql&amp;theme=vue&amp;show_icons=true&hide_border=true" width="500"/>|
