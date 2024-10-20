@@ -6,4 +6,4 @@
 
 ![visitor counter](https://busuanzi.her-cat.com/github/counter.svg?username=zqlit)
 
-![](https://github.com/zqlit/zqlit/profile-3d-contrib/profile-green-animate.svg?raw=true)
+![](./profile-3d-contrib/profile-green-animate.svg)
