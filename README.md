@@ -3,7 +3,3 @@
 ### 😄 Hi there, I'm Vaica, Welcome~~ 👋
 
 🇨🇳 Wuhan,China・🕹Backend Engineer
-
-![visitor counter](https://busuanzi.her-cat.com/github/counter.svg?username=zqlit)
-
-![](./profile-3d-contrib/profile-green-animate.svg)
