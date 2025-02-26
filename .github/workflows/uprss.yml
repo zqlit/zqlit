@@ -1,0 +1,15 @@
+name: Visit URL Every 3 Hours
+
+on:
+  schedule:
+    # 每3个小时运行一次
+    - cron: '0 */3 * * *'
+
+jobs:
+  visit-url:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send a request to the URL
+      run: |
+        curl -X GET "https://rss.usj.cc/uprss.php" -H "User-Agent: GitHubActions"
